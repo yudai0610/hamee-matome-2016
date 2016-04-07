@@ -7,6 +7,6 @@
 	<title>Document</title>
 </head>
 <body>
-	<?= $a ?>
+	<?= $a ?>あああ
 </body>
 </html>
