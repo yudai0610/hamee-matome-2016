@@ -35,21 +35,31 @@
 
 #### inputタグ(radio)
 ```html
-<label><input type="radio" name="radio-group1"> 男</label>
-<label><input type="radio" name="radio-group1"> 女</label>
-<label><input type="radio" name="radio-group1" checked> その他</label>
+<label><input type="radio" name="gender"> 男性</label>
+<label><input type="radio" name="gender"> 女性</label>
+<label><input type="radio" name="gender" checked> その他</label>
 ```
 
-<label><input type="radio" name="radio-group1"> 男</label>
-<label><input type="radio" name="radio-group1"> 女</label>
-<label><input type="radio" name="radio-group1" checked> その他</label>
+<label><input type="radio" name="gender"> 男性</label>
+<label><input type="radio" name="gender"> 女性</label>
+<label><input type="radio" name="gender" checked> その他</label>
 
 ラジオボタンと呼ばれることが多い。
 
 `男性`, `女性`, `その他`のように、複数の選択肢のうちいずれかを選ばせるために使います。
-**name**属性が同じ値のラジオボタンは、そのうち1つしか選択することが出来ない。
+**name**属性が同じ値のラジオボタンは、そのうち1つしか選択することができません。
 
-`checked`属性をつけると、デフォルトでその選択肢をチェックした状態にできる
+`checked`属性をつけると、デフォルトでその選択肢をチェックした状態にできます。
+
+> 完全に余談ですが、GoogleやFacebookなどは、男性と女性以外の性別を選べるようにしています。
+
+> これは性的マイノリティに対する配慮の一環です。
+
+> ですから、`name`属性も"sex"(生物学的な性)ではなく、"gender"(社会的な性)にした方が適切な場合が多いのです。
+
+> 興味のある方はこちらのリンクを参照してください
+
+> [Facebookでは50種類の性別を設定できる：「男」「女」以外の性別は山ほどあるのです](http://www.ikedahayato.com/20140516/6442232.html)
 
 
 #### inputタグ(checkbox)
