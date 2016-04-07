@@ -7,7 +7,7 @@
 #
 # ホスト: ivgz2rnl5rh7sphb.chr7pe7iynqr.eu-west-1.rds.amazonaws.com (MySQL 5.6.27-log)
 # データベース: t8vudl5fa1fhbj05
-# 作成時刻: 2016-04-07 06:31:34 +0000
+# 作成時刻: 2016-04-07 06:39:46 +0000
 # ************************************************************
 
 
@@ -61,11 +61,11 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`name`, `group_id`)
 VALUES
-	('ホセ',2),
-	('巻嶋',0),
-	('日野',1),
-	('柳',1),
-	('柳沼',3);
+	('Alice',1),
+	('Bob',1),
+	('Carol',2),
+	('Dave',3),
+	('Zoe',0);
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
