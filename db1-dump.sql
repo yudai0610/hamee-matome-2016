@@ -7,7 +7,7 @@
 #
 # ホスト: ivgz2rnl5rh7sphb.chr7pe7iynqr.eu-west-1.rds.amazonaws.com (MySQL 5.6.27-log)
 # データベース: t8vudl5fa1fhbj05
-# 作成時刻: 2016-04-07 06:39:46 +0000
+# 作成時刻: 2016-04-07 06:44:19 +0000
 # ************************************************************
 
 
@@ -45,21 +45,21 @@ VALUES
 UNLOCK TABLES;
 
 
-# テーブルのダンプ users
+# テーブルのダンプ members
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `users`;
+DROP TABLE IF EXISTS `members`;
 
-CREATE TABLE `users` (
+CREATE TABLE `members` (
   `name` varchar(11) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `group_id` int(11) NOT NULL,
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+LOCK TABLES `members` WRITE;
+/*!40000 ALTER TABLE `members` DISABLE KEYS */;
 
-INSERT INTO `users` (`name`, `group_id`)
+INSERT INTO `members` (`name`, `group_id`)
 VALUES
 	('Alice',1),
 	('Bob',1),
@@ -67,7 +67,7 @@ VALUES
 	('Dave',3),
 	('Zoe',0);
 
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+/*!40000 ALTER TABLE `members` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
